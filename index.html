@@ -1,0 +1,53 @@
+<!DOCTYPE HTML>
+
+<HTML lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>Encriptador</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+
+        <!-- Se pone la fuente -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <header>
+            <img src="img/Logo.png" alt="logoEncriptador" class="logo">
+            <h1 class="encabezado">Challenge Encriptador</h1>
+        </header>
+
+        <main>
+            <section>
+                <div class="conte-cajatexto">
+                    <textarea id="palaUsuario" class="text-area" onkeyup="caracterEspec();" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+                </div>
+                <div class="aviso">
+                    <h6 class="informacion"><img src="img/Vector.png" class="vector">Solo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button onclick="encriptarMensaje();" class="btn-encriptar">Encriptar</button>
+                    <button onclick="desencripMensaje();" class="btn-desencriptar">Desencriptar</button>
+                </div>
+            </section>
+            <section class="resultado">
+                <div class="resultado-texto">
+                    <textarea id="mensaje" class="mensaje" cols="30" rows="10" placeholder="Ningún mensaje fue encontrado. Ingresa el texto que deseas encriptar o desencriptar"></textarea>
+                </div>
+                <div>
+                    <button onclick="copiarPala();" id="copiar-btn" class="copiar">Copiar</button>
+                </div>
+            </section>
+        </main>
+        <script src="app.js"></script>
+
+        <footer>
+            <p>2024. Realizado por Santiago Garcia A.</p>
+        </footer>
+    </body>
+</HTML>
+
+
